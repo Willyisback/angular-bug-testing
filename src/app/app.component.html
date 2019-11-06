@@ -1,0 +1,5 @@
+<div *ngFor="let demoItem of demo">
+  <app-demo-item *ngIf="demoItem?.type === '1'" [(ngModel)]="demoItem"></app-demo-item>
+  <app-demo-item *ngIf="demoItem?.type === '2'" [(ngModel)]="demoItem"></app-demo-item>
+  <app-demo-item *ngIf="demoItem?.type === '3'" [(ngModel)]="demoItem"></app-demo-item>
+</div>
